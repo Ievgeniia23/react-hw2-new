@@ -1,15 +1,13 @@
+import css from './BarStats.module.css'
 
-
-const BarStats = () => {
+const BarStats = ({bottles}) => {
   return (
     <div>
-      
-        <ul>
-          <li>Beer: 0</li>
-          <li>Wine: 0</li>
-          <li>Whiskey: 0</li>
-        </ul>
-     
+      <ul className={css.drinkStyles}>
+        <li>🍺Beer: {bottles.beer}</li>
+        <li>🍷Wine: { bottles.wine}</li>
+        <li>🍸Whiskey: { bottles.whiskey}</li>
+      </ul>
     </div>
   );
 }

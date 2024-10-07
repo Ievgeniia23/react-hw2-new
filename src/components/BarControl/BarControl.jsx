@@ -1,14 +1,13 @@
+import css from './BarControl.module.css'
 
-
-const BarControl = () => {
+const BarControl = ({ onAddBeer, onAddWine, onAddWhiskey }) => {
   return (
-    <div>
-      Pub
-      <button>Add beer</button>
-      <button>Add wine</button>
-      <button>Add whiskey</button>
+    <div className={css.barStyle}>
+      <button onClick={onAddBeer} className={css.btnStyle}>Add beer </button>
+      <button onClick={onAddWine} className={css.btnStyle}>Add wine</button>
+      <button onClick={onAddWhiskey} className={css.btnStyle}>Add whiskey</button>
     </div>
   );
 }
 
-export default BarControl
+export default BarControl;

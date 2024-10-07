@@ -1,0 +1,25 @@
+.backdrop {
+position: fixed;
+z-index: inherit;
+inset: 0;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+ 
+.modal{
+background-color: white;
+width: 400px;
+height: 400px;
+overflow: auto;
+padding: 20px;
+border-radius: 16px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -40%);
+}
+.closeBtn {
+background-color: rgb(14, 14, 110);
+border: 2px solid blue;
+border-radius: 8px;
+}
